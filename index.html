@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Lumière | كافيه لوميير</title>
+
+    <!-- ربط ملف التنسيقات الخارجي -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- مكتبة الأيقونات Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- خط Cairo من جوجل -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- شريط التنقل (Navigation Bar) -->
+    <nav class="navbar">
+        <div class="logo">
+            <i class="fas fa-mug-hot"></i>
+            <span>Café Lumière</span>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="index.html" class="active"><i class="fas fa-home"></i> الرئيسية</a></li>
+            <li><a href="products.html"><i class="fas fa-coffee"></i> المنيو</a></li>
+            <li><a href="about.html"><i class="fas fa-store"></i> عن الكافيه</a></li>
+            <li><a href="contact.html"><i class="fas fa-envelope-open-text"></i> تواصل معنا</a></li>
+            <li><a href="orders.html"><i class="fas fa-receipt"></i> الطلبات</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- قسم الهيرو (Hero Section) -->
+    <header class="hero">
+        <div class="hero-text">
+            <h1>أهلاً بك في كافيه لوميير ☕</h1>
+            <p class="subtitle">حيث تبدأ كل قصة بفنجان قهوة</p>
+            <p>
+                نقدم لكم أجود أنواع القهوة العربية والإيطالية والتركية،
+                مع تشكيلة واسعة من الحلويات والمعجنات الطازجة يومياً
+                في أجواء هادئة ومريحة تناسب العمل واللقاءات.
+            </p>
+
+            <a href="products.html" class="btn-primary">
+                تصفح المنيو <i class="fas fa-arrow-left"></i>
+            </a>
+        </div>
+        <div class="hero-image">
+            <!-- صورة الكافيه الرئيسية -->
+            <img src="images/hero.png" alt="كافيه لوميير">
+        </div>
+    </header>
+
+
+    <!-- قسم المميزات -->
+    <section class="features">
+        <h2 class="section-title">لماذا تختارنا؟</h2>
+        <div class="features-grid">
+
+            <!-- البطاقة 1 -->
+            <div class="feature-card">
+                <i class="fas fa-coffee feature-icon"></i>
+                <h3>قهوة مختصة</h3>
+                <p>حبوب قهوة مختارة من أفضل المزارع حول العالم.</p>
+            </div>
+
+            <!-- البطاقة 2 -->
+            <div class="feature-card">
+                <i class="fas fa-cookie-bite feature-icon"></i>
+                <h3>حلويات طازجة</h3>
+                <p>حلويات ومعجنات تُحضّر يومياً بأيدي خبراء.</p>
+            </div>
+
+            <!-- البطاقة 3 -->
+            <div class="feature-card">
+                <i class="fas fa-wifi feature-icon"></i>
+                <h3>أجواء مريحة</h3>
+                <p>إنترنت مجاني ومقاعد هادئة مناسبة للعمل والدراسة.</p>
+            </div>
+
+            <!-- البطاقة 4 -->
+            <div class="feature-card">
+                <i class="fas fa-heart feature-icon"></i>
+                <h3>خدمة مميزة</h3>
+                <p>فريق ودود يهتم بأدق تفاصيل تجربتك معنا.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- قسم نبذة + صورة إضافية -->
+    <section class="about-preview">
+        <div class="about-preview-image">
+            <!-- صورة داخلية للكافيه -->
+            <img src="images/inside.png" alt="من داخل الكافيه">
+        </div>
+        <div class="about-preview-text">
+            <h2>قصتنا تبدأ من حبة قهوة</h2>
+            <p>
+                بدأنا رحلتنا عام 2018 بحلم بسيط: أن نمنح كل زائر تجربة دافئة
+                لا تُنسى. اليوم أصبح كافيه لوميير وجهة محبي القهوة والذواقة
+                في المدينة.
+            </p>
+            <a href="about.html" class="btn-outline">اعرف المزيد عنّا</a>
+
+            <!-- رابط خارجي مطلوب -->
+            <p class="external">
+                تابعنا على
+                <a href="https://www.instagram.com" target="_blank" rel="noopener">
+                    <i class="fab fa-instagram"></i> إنستجرام
+                </a>
+            </p>
+        </div>
+    </section>
+
+
+    <!-- الفوتر -->
+    <footer class="footer">
+        <p>© 2026 Café Lumière - جميع الحقوق محفوظة</p>
+    </footer>
+
+    <!-- ملف JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

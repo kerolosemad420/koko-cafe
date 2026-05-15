@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عن الكافيه | Café Lumière</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- شريط التنقل -->
+    <nav class="navbar">
+        <div class="logo">
+            <i class="fas fa-mug-hot"></i>
+            <span>Café Lumière</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html"><i class="fas fa-home"></i> الرئيسية</a></li>
+            <li><a href="products.html"><i class="fas fa-coffee"></i> المنيو</a></li>
+            <li><a href="about.html" class="active"><i class="fas fa-store"></i> عن الكافيه</a></li>
+            <li><a href="contact.html"><i class="fas fa-envelope-open-text"></i> تواصل معنا</a></li>
+            <li><a href="orders.html"><i class="fas fa-receipt"></i> الطلبات</a></li>
+        </ul>
+    </nav>
+
+    <header class="page-header">
+        <h1><i class="fas fa-store"></i> تعرّف على كافيه لوميير</h1>
+        <p>قصتنا، رؤيتنا، ولماذا نحب ما نفعله</p>
+    </header>
+
+    <!-- قسم نبذة عن الكافيه -->
+    <section class="about-section">
+        <div class="about-image">
+            <!-- صورة عن الكافيه -->
+            <img src="images/about.png" alt="كافيه لوميير">
+        </div>
+        <div class="about-text">
+            <h2>Café Lumière</h2>
+            <p class="job-title">قهوة، دفء، وذكريات</p>
+            <p>
+                كافيه لوميير ليس مجرد مكان لشرب القهوة، بل تجربة كاملة من
+                الهدوء والاستمتاع بكل تفصيلة. نقدم لكم أجود أنواع المشروبات
+                الساخنة والباردة، إلى جانب حلويات طازجة تُحضّر يومياً.
+            </p>
+
+            <!-- زر تفاعلي يغير النص عند الضغط -->
+            <button id="readMoreBtn" class="btn-primary">
+                <i class="fas fa-book-open"></i> اقرأ المزيد
+            </button>
+
+            <!-- محتوى يظهر / يختفي عند الضغط على الزر -->
+            <div id="moreInfo" class="more-info hidden">
+                <h3>لماذا كافيه لوميير؟</h3>
+                <ul>
+                    <li>☕ حبوب قهوة عربية وإيطالية مختارة بعناية.</li>
+                    <li>🍰 حلويات يومية طازجة من مطبخنا.</li>
+                    <li>📶 إنترنت مجاني عالي السرعة.</li>
+                    <li>🪑 جلسات داخلية وخارجية مريحة.</li>
+                    <li>🎵 موسيقى هادئة طوال اليوم.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>© 2026 Café Lumière - جميع الحقوق محفوظة</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

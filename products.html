@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المنيو | Café Lumière</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- شريط التنقل -->
+    <nav class="navbar">
+        <div class="logo">
+            <i class="fas fa-mug-hot"></i>
+            <span>Café Lumière</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html"><i class="fas fa-home"></i> الرئيسية</a></li>
+            <li><a href="products.html" class="active"><i class="fas fa-coffee"></i> المنيو</a></li>
+            <li><a href="about.html"><i class="fas fa-store"></i> عن الكافيه</a></li>
+            <li><a href="contact.html"><i class="fas fa-envelope-open-text"></i> تواصل معنا</a></li>
+            <li><a href="orders.html"><i class="fas fa-receipt"></i> الطلبات</a></li>
+        </ul>
+    </nav>
+
+    <!-- رأس الصفحة -->
+    <header class="page-header">
+        <h1><i class="fas fa-coffee"></i> منيو الكافيه</h1>
+        <p>اكتشف تشكيلتنا المميزة من المشروبات والحلويات</p>
+    </header>
+
+
+    <!-- قسم المنتجات (يتم تحميله من ملف products.json باستخدام Fetch API) -->
+    <section class="services-section">
+        <h2 class="section-title">قائمة المنتجات</h2>
+
+        <!-- المكان الذي تُعرض فيه المنتجات تلقائياً -->
+        <div id="products-container" class="services-grid">
+            <p class="loading">⏳ جاري تحميل المنتجات...</p>
+        </div>
+    </section>
+
+
+    <!-- قسم إضافة منتج جديد (للإدارة - يستخدم json-server POST) -->
+    <section class="add-service-section">
+        <h2 class="section-title">➕ إضافة منتج جديد (للإدارة)</h2>
+        <form id="add-product-form" class="add-form">
+            <input type="text" id="new-name" placeholder="اسم المنتج" required>
+            <input type="text" id="new-price" placeholder="السعر (ج.م)" required>
+            <input type="text" id="new-description" placeholder="الوصف" required>
+            <button type="submit" class="btn-primary">
+                <i class="fas fa-plus"></i> إضافة
+            </button>
+        </form>
+    </section>
+
+    <!-- الفوتر -->
+    <footer class="footer">
+        <p>© 2026 Café Lumière - جميع الحقوق محفوظة</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

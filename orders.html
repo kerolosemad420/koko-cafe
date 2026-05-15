@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الطلبات | Café Lumière</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- شريط التنقل -->
+    <nav class="navbar">
+        <div class="logo">
+            <i class="fas fa-mug-hot"></i>
+            <span>Café Lumière</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html"><i class="fas fa-home"></i> الرئيسية</a></li>
+            <li><a href="products.html"><i class="fas fa-coffee"></i> المنيو</a></li>
+            <li><a href="about.html"><i class="fas fa-store"></i> عن الكافيه</a></li>
+            <li><a href="contact.html"><i class="fas fa-envelope-open-text"></i> تواصل معنا</a></li>
+            <li><a href="orders.html" class="active"><i class="fas fa-receipt"></i> الطلبات</a></li>
+        </ul>
+    </nav>
+
+    <header class="page-header">
+        <h1><i class="fas fa-receipt"></i> قائمة الرسائل والطلبات</h1>
+        <p>تابع حالة رسالتك من خلال رقم الهاتف</p>
+    </header>
+
+    <!-- قسم البحث برقم التلفون -->
+    <section class="search-section">
+        <h2 class="section-title">🔍 ابحث عن طلبك</h2>
+        <p class="search-hint">ادخل رقم هاتفك لعرض رسالتك</p>
+        <div class="search-box">
+            <input type="tel" id="searchPhone" placeholder="ادخل رقم الهاتف...">
+            <button id="searchBtn" class="btn-primary">
+                <i class="fas fa-search"></i> بحث
+            </button>
+        </div>
+        <div id="searchResult" class="search-result"></div>
+    </section>
+
+    <!-- قسم الإحصائيات -->
+    <section class="stats-section">
+        <div class="stat-card">
+            <i class="fas fa-users"></i>
+            <h3 id="totalCount">0</h3>
+            <p>إجمالي الرسائل</p>
+        </div>
+        <div class="stat-card">
+            <i class="fas fa-calendar-day"></i>
+            <h3 id="todayCount">0</h3>
+            <p>رسائل اليوم</p>
+        </div>
+    </section>
+
+    <!-- قائمة كل الطلبات -->
+    <section class="appointments-section">
+        <h2 class="section-title">كل الرسائل</h2>
+        <div id="appointments-container" class="appointments-grid">
+            <p class="loading">⏳ جاري تحميل البيانات...</p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>© 2026 Café Lumière - جميع الحقوق محفوظة</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
